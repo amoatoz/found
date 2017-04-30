@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -26,3 +22,6 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/Admin', 'AdminController@index');
+Route::get('/Dashboard', 'UsersController@index');
